@@ -1,69 +1,58 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: "EducaPet",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
+      label: "Inicio",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Nosotros",
+      href: "/nosotros",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Organizaciones",
+      href: "/organizaciones",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Recursos Educativos",
+      href: "/recursos-educativos",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Foro",
+      href: "/foro",
     },
+    {
+      label: "Calendario",
+      href: "/calendario",
+    }
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Inicio",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Nosotros",
+      href: "/nosotros",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Organizaciones",
+      href: "/organizaciones",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Recursos Educativos",
+      href: "/recursos-educativos",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Foro",
+      href: "/foro",
     },
     {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
+      label: "Calendario",
+      href: "/calendario",
+    }
   ],
-  links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
 };
