@@ -9,6 +9,12 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+import ScrollToUpButton from "@/components/scrollToUp";
+config.autoAddCss = false; /* eslint-disable import/first */
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -37,20 +43,20 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-[#F8EDE5] font-sans antialiased",
+          "min-h-screen bg-[#F8EDE5] font-sans ",
           fontSans.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col ">
             <Navbar />
-            <main className="container mx-auto max-w-8xl pt-16 px-6 flex-grow">
+            <main className="w-full pt-16  flex-grow">
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-            
             </footer>
           </div>
+           <ScrollToUpButton/>
         </Providers>
       </body>
     </html>

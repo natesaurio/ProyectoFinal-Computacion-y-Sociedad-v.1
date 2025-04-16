@@ -21,10 +21,6 @@ export const siteConfig = {
       href: "/recursos-educativos",
     },
     {
-      label: "Foro",
-      href: "/foro",
-    },
-    {
       label: "Calendario",
       href: "/calendario",
     }
@@ -45,10 +41,6 @@ export const siteConfig = {
     {
       label: "Recursos Educativos",
       href: "/recursos-educativos",
-    },
-    {
-      label: "Foro",
-      href: "/foro",
     },
     {
       label: "Calendario",

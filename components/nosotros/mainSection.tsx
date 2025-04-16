@@ -24,12 +24,7 @@ export const MainSectionAboutUs = () => {
           <p className="text-zinc-700 text-lg md:text-xl font-medium">
             ¡Juntos podemos hacer la diferencia!
           </p>
-          <div className="pt-4">
-            <button className="bg-[#B25A28] hover:bg-[#a04b1e] text-white font-medium py-2.5 px-6 rounded-md transition-colors duration-200">
-              Conoce más
-              <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-            </button>
-          </div>
+
         </div>
       </div>
     </div>
